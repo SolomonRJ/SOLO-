@@ -1,10 +1,15 @@
-.body {
-  background-color:#2b2c2e;
+.img {
+  background-image: url('chris.jpg');/* Relative path to the image file */
+  background-size: cover;
+  background-size:100%;
+  height: 100vh; /* This ensures that the background takes up the full height of the viewport */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   position: relative;
-  background: silver;
+  background:pink;
   width: 90%;
   max-width: 500px;
   margin: 100px auto 0;
@@ -14,9 +19,11 @@
 
 h2 {
   position: absolute;
-  color: pink;
   top: 0%;
-  left: 0%;
+  left:25%;
+  display: flex;
+  justify-content: center;
+  color: pink;
   font-size: xx-large;
   font-family:'Courier New', Courier, monospace;
 }
@@ -55,8 +62,23 @@ p {
 }
 .container:hover {
   background:white;
+  
 }
 .next:hover {
   color: white;
   background: black;
+}
+
+body{
+  margin: 0;
+  border: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+  padding-left: 5px;
+  padding-top: 5px;
 }
